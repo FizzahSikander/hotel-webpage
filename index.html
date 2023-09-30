@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/20b631fd69.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Actor&family=Aleo:wght@300;400;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Josefin+Sans:wght@300;400;500;700&family=Mulish:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&family=Ramaraja&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Bonz.ai</title>
+</head>
+
+<body>
+    <header>
+        <aside class="end">
+            <img class="logo" src="images/bonz.ai-logo-white-landscape.png" alt="logo">
+        </aside>
+        <nav class="nav" id="drop-nav">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="#contact">Booking</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Contact Us
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <li class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></li>
+        </nav>
+    </header>
+    <main>
+        <section class="first-page">
+            <article class="header-info">
+                <h1 class="main-title">Bonz.ai</h1>
+                <p class="main-info">Tech-Enhanced Eco-Friendly Heaven</p>
+                <button class="button">Search</button>
+            </article>
+        </section>
+        <section class="booking-container">
+            <h2>Book Your Stay</h2>
+            <form id="booking-form">
+                <div class="input-group">
+                    <label for="arrival-date">Arrival Date:</label>
+                    <input type="date" id="arrival-date" required>
+                </div>
+                <div class="input-group">
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date" required>
+                </div>
+                <div class="input-group">
+                    <label for="adults">Adults:</label>
+                    <input type="number" id="adults" min="1" value="1" required>
+                </div>
+                <div class="input-group">
+                    <label for="children">Children:</label>
+                    <input type="number" id="children" min="0" value="0" required>
+                </div>
+                <button class="form-button" type="submit">Check Availability</button>
+            </form>
+        </section>
+        <section class="firstpage-footer">
+            <div class="firstpage-footer__first">
+                <div class="arc"></div>
+                <div class="arc"></div>
+            </div>
+            <div class="firstpage-footer__second">
+                <div class="firstpage-footer__box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>Search</p>
+                </div>
+                <div class="firstpage-footer__box">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Select</p>
+                </div>
+                <div class="firstpage-footer__box">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <p>Book & Enjoy</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <article>
+            <div class="footer__list">
+                <div class="end">
+                    <img class="logo" src="images/bonz.ai-logo-white-landscape.png" alt="logo">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="footer__list">
+                <a class="footer__li" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer__li" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="footer__li" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="footer__li" href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a class="footer__li" href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </article>
+    </footer>
+    <script>
+        function dropNav() {
+            let drop = document.getElementById("drop-nav");
+            if (drop.className === "nav") {
+                drop.className += " responsive";
+            } else {
+                drop.className = "nav";
+            }
+        }
+    </script>
+</body>
+
+</html>
