@@ -399,7 +399,7 @@ input[type="number"] {
 
 .fifth-page_container {
     min-height: 287px;
-    max-width: 1113px;
+    max-width: 1773px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -573,7 +573,7 @@ h4 {
 }
 
 /* booking page css */
-.booking-container-one {
+.booking-top {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -607,29 +607,22 @@ h4 {
 
 }
 
-.main-title-three {
+.room-one-header {
     height: 26px;
     left: 0%;
     right: 56.58%;
     top: calc(50% - 26px/2 - 32px);
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 23px;
     line-height: 26px;
-    /* identical to box height, or 162% */
-
-
     color: #2F281E;
     width: 211px;
-    height: 26px;
-
 }
 
-.main-inf-three {
-    width: 486px;
-    height: 98px;
+.room-one-para {
+    width: 650px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -641,7 +634,7 @@ h4 {
 
 }
 
-.thirdcontainer-pic {
+.roomcontainer-pic {
     max-width: 650px;
     width: 100%;
     min-height: 300px;
@@ -650,8 +643,7 @@ h4 {
 
 .first,
 .second,
-.third,
-.fourth {
+.third {
     width: 100%;
     min-height: 178px;
     display: flex;
@@ -665,4 +657,99 @@ h4 {
 .blue {
     height: 50px;
     width: 50px;
+}
+
+.third__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1773px;
+    min-height: 411px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border-top: 1px solid black;
+    background-color: white;
+}
+
+.grid__awards {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    max-width: 1773px;
+    min-height: 411px;
+    align-items: start;
+}
+
+.awards {
+    grid-row: 1/1;
+    grid-column: 1/2;
+    margin-top: 50px;
+}
+
+.awards__site {
+    margin-top: 50px;
+    grid-row: 1/1;
+    grid-column: 2/3;
+}
+
+.awards__ui {
+    margin-top: 50px;
+    grid-row: 1/1;
+    grid-column: 3/4;
+}
+
+.awards__date {
+    margin-top: 50px;
+    grid-row: 1/1;
+    grid-column: 4/5;
+}
+
+.awards__best {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.awards__template {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.awards__date--two {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.awards__para {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+
+
+.second-container {
+    width: 100%;
+    max-width: 1773px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
