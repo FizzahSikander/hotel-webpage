@@ -753,3 +753,23 @@ h4 {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 800px) {
+    .tools {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid__awards {
+        display: block;
+    }
+
+    .room-one-para {
+        width: auto;
+    }
+
+    .room-one {
+        display: flex;
+        flex-direction: column;
+    }
+}
