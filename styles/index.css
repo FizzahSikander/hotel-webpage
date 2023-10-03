@@ -162,8 +162,8 @@ nav ul li a {
     min-height: 300px;
 }
 
-.main-title,
-.hotel-info-title {
+.header-info h1,
+.hotel-info h1 {
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 700;
@@ -176,7 +176,7 @@ nav ul li a {
     margin-top: 70px;
 }
 
-.main-info {
+.header-info p {
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
@@ -419,7 +419,7 @@ input[type="number"] {
     color: black;
 }
 
-.fifthpage_container-info {
+.fifthpage-container__info {
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
@@ -435,6 +435,7 @@ input[type="number"] {
     flex-direction: column;
     justify-content: center;
     margin-left: 15px;
+    margin-right: 15px;
     padding: 30px;
 }
 
@@ -484,7 +485,8 @@ h4 {
     color: #684934;
 }
 
-.thirdpage_container-info {
+.thirdpage_container p,
+.fourthpage_container p {
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
@@ -508,7 +510,7 @@ h4 {
     justify-content: flex-end;
 }
 
-.hotel-info-para {
+.hotel-info p {
     max-width: 900px;
     padding: 32px;
     margin-left: 20px;
@@ -558,7 +560,7 @@ h4 {
         font-size: 12px;
     }
 
-    .hotel-info-title {
+    .hotel-info h1 {
         font-size: 30px;
         margin-left: 15px;
     }
@@ -567,7 +569,7 @@ h4 {
         height: 40px;
     }
 
-    .main-info {
+    .header-info p {
         margin-left: 15px;
     }
 }
@@ -598,7 +600,7 @@ h4 {
     margin-top: 20px;
 }
 
-.room-one {
+.room {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -607,7 +609,7 @@ h4 {
 
 }
 
-.room-one-header {
+.room_one h3 {
     height: 26px;
     left: 0%;
     right: 56.58%;
@@ -621,7 +623,7 @@ h4 {
     width: 211px;
 }
 
-.room-one-para {
+.room_one p {
     width: 650px;
     font-family: 'Poppins';
     font-style: normal;
@@ -634,10 +636,10 @@ h4 {
 
 }
 
-.roomcontainer-pic {
+.roomcontainer_pic {
     max-width: 650px;
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
 }
 
 
@@ -649,6 +651,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .purple,
@@ -735,7 +738,9 @@ h4 {
     opacity: 0.6;
 }
 
-
+.room_one {
+    padding: 15px;
+}
 
 .second-container {
     width: 100%;
@@ -764,12 +769,23 @@ h4 {
         display: block;
     }
 
-    .room-one-para {
+    .room_one p {
         width: auto;
     }
 
-    .room-one {
+    .room {
         display: flex;
         flex-direction: column;
+    }
+
+    .first,
+    .second,
+    .third {
+        min-height: auto;
+        margin-top: 50px;
+    }
+
+    .booking-top p {
+        margin-left: 30px;
     }
 }
